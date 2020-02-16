@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.blog-description {
+  margin: auto;
+  text-align: justify;
+  width: 664px;
+}
+.blog-title {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-size: 24px;
+}
+.blog-image {
+  text-align: center;
+}
+.blog-wrapper {
+  width: 80%;
+  margin: 90px auto;
+}
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0.0rem rgba(0,123,255,.5);
+}
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.0rem rgba(0,123,255,.25);
+}
+a:hover{
+
+  color: initial;
+}
+input.col-12.comment-box {
+  margin: 10px 0px 0px;
+  border-radius: 4px;
+  outline: none;
+  text-decoration: none;
+  border: 2px solid lightgray;
+}
+.comment {
+  padding: 5px 10px;
+  margin: 10px 0px;
+  font-size: 13px;
+  border-radius: 8px;
+  background: lightsteelblue;
+}
+.cart-item td img {
+  border-radius: 5px;
+  height: 100px;
+}
+.item-description {
+  font-size: 13px;
+  color: darkslategray;
+}
+.item-title {
+  font-weight: bold;
+  font-size: 19px;
+}
+.cart-item td {
+  background: lightsteelblue;
+  padding: 8px;
+  border-bottom: 2px solid white;
+}
+.collection-name {
+  font-size: 14px;
+  color: darkslategray;
+  font-weight: bold;
+}
+.collection-name span {
+  color: dimgray;
+  font-size: 13px;
+  padding-left: 7px;
+  font-weight: 400;
+}
+.increment, .decrement {
+  /* width: 10px; */
+  height: 30px;
+  width: 30px;
+}
+.checkout {
+  margin: 16px 15px;
+}
+.product-form input[type="number"] {
+  background: white;
+}
+.card-product .price-old {
+  color: red;
+  font-size: 13px;
+}
+.price.price-new {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0pc;
+}
+.price.price-old {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: red;
+}
