@@ -30,7 +30,7 @@ return(
    </Link>
 <div className="blog-content">{blog.description}</div>
 <div className="blog-actions row">
-    <div className=" col-6"><button className="btn btn-default">Comment</button></div>
+<Link to={`/blogs/${blog.title.replace(/ +/g, "")}`}>  <div className=" col-6"><button className="btn btn-default">Comment <span className="badge badge-dark">{blog.comments.length}</span></button></div> </Link>
 <div className="likes col-6"><button className={`btn btn-default ${blog.isLiked ? "btn-primary" : ""}`} onClick={()=>this.props.handleLikes(blog.likes, blog.blogId)}>{blog.isLiked ? <i class="far fa-thumbs-up"></i>: <i class="far fa-thumbs-up"></i>} <span className="badge badge-dark">{blog.likes}</span></button></div>
 </div>
 </div>
