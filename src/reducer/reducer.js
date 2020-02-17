@@ -1,4 +1,4 @@
-﻿const iState = {
+const iState = {
     itemCount: 1,
     collections: [
         {
@@ -84,7 +84,12 @@
             ImageLink: process.env.PUBLIC_URL + `/images/blog1.jpg`,
             likes: 2,
             isLiked: false,
-            comments: [""]
+            comments: [
+                "Well Done",
+                "Great Article"
+
+
+            ]
         },
         {
             blogId: 2,
@@ -93,7 +98,12 @@
             ImageLink: process.env.PUBLIC_URL + `/images/blog2.jpg`,
             likes: 4,
             isLiked: false,
-            comments: [""]
+            comments: [
+                "A Nice Effort. Very Halpful!",
+                "Oh Great. Get my problem solved by reading your article. Thanks"
+
+ 
+            ]
         },
         {
             blogId: 3,
