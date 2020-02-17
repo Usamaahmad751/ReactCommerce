@@ -29,9 +29,7 @@ class Navbar extends Component {
                          />
                          </Link>
                         </span>
-                        <span className="admin">
-                            <Link to="/">Admin</Link>
-                        </span>
+                     
   </div>
                 </nav>
 
