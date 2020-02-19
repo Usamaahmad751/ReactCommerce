@@ -6,9 +6,6 @@ import FeaturedBlog from './blogs/featuredBlog';
 import Footer from './footer/footer';
 import FeaturedCollections from './collections/featuredCollections';
 class Home extends Component {
-    state = {
-        content : []
-    }
    
     render() {
         const {handleAddToCart} = this.props;
