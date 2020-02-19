@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 class Cart extends Component {
-    state = {
-
-    }
+   
     render() {
         const { cart, collections } = this.props;
         const products = cart.map(c => c.product)
