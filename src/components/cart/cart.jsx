@@ -44,7 +44,8 @@ totalPrice += totalItems[i] * itemPrice[i]
                                                     <div className="item-description">{description}</div>
                                                     <div className="collection-name">Collection Name: <span>{collections.filter(cf => cf.id == collectionId).map(cd => cd.name)}</span></div>
                                                 </td>
-                                                <td>{c.itemCount}</td>
+                                                <td><input type="number" value={c.itemCount} style={{width:40, textAlign:"center"}} /></td>
+
                                                 <td>{priceNew}</td>
                                                 <td>{priceNew * c.itemCount}</td>
                                                 <td><button className="btn btn-danger" onClick={()=>this.props.handleCartItemDelete(c)}>Delete</button></td>
