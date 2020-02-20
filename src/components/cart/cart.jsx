@@ -48,7 +48,7 @@ totalPrice += totalItems[i] * itemPrice[i]
 
                                                 <td>{priceNew}</td>
                                                 <td>{priceNew * c.itemCount}</td>
-                                                <td><button className="btn btn-danger" onClick={()=>this.props.handleCartItemDelete(c)}>Delete</button></td>
+                                                  <td><button className="btn btn-danger" onClick={()=>this.props.handleCartItemDelete(c)}>Delete</button></td>
                                             </tr>
                                         )
 
@@ -58,7 +58,7 @@ totalPrice += totalItems[i] * itemPrice[i]
                         <div className="checkout-wrappers">
                         <div className="checkout float-right">
                         <button className="checkout-buttons btn btn-danger mr-2" onClick={this.props.clearCart}>Clear Cart</button>
-                            <button className="checkout-buttons btn btn-warning" onClick={() => this.props.handleCheckout(this.props.cart, totalPrice)}>Proceed To Checkout</button>
+              <Link to="/orders">                  <button className="checkout-buttons btn btn-warning" onClick={() => this.props.handleCheckout(this.props.cart, totalPrice)}>Proceed To Checkout</button> </Link>
                         </div>
                     </div>
                     </div>
