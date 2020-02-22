@@ -191,7 +191,6 @@ const reducer = (state = iState, action) => {
   const getCopiedItem =  cartItem.filter(cf=>cf.product.id == product.id)
 
         if(getCopiedItem.map(p=>p.product.id === product.id)[0]){
-            console.log(state.cart)
       getCopiedItem.map(i=>i.itemCount = itemCount + i.itemCount)
       const updatedCart = [...state.cart]
 return {
@@ -205,7 +204,6 @@ cart: updatedCart
         const cartItemId = Math.random();
         const newcartItem = { cartItemId, itemCount, product }
         const updatedCart = [...state.cart, newcartItem]
-       console.log("New Product added")
         return {
             ...state,
             cart: updatedCart
@@ -216,15 +214,15 @@ cart: updatedCart
 
     if (action.type === 'HANDLE_CHECKOUT') {
         const { orderItems, orderPrice } = action.payload;
-       console.log(orderItems, orderPrice)
         const orderId = Math.random();
        
         const newOrderItem = {orderId, orderPrice , orderItems}
         const updatedOrder = [...state.orders, newOrderItem]
-        console.log(state.orders)
+        state.cart = [];
         return {
             ...state,
-            orders: updatedOrder
+            orders: updatedOrder,
+            cart:state.cart
         }
         
     }
@@ -241,7 +239,6 @@ cart: updatedCart
 
 
     if (action.type === 'CLEAR_CART') {
-   console.log("Cart Cleared")
    state.cart = [];
    return{
 ...state,
