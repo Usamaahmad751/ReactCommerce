@@ -2,10 +2,7 @@
 import axios from 'axios'
 class AdminLogin extends Component {
     state = {
-        admin: [
-
-        ],
-        username: "",
+      username: "",
         password: "",
         loggedIn: false
     }
