@@ -13,9 +13,6 @@ import CollectionPage from './components/collections/collectionPage';
 import BlogPage from './components/blogs/blogPage';
 import Cart from './components/cart/cart';
 class App extends Component{
-state = {
-    cartValue: 0,
-}
     handleAddToCart = (items , e) => {
       
     const newItem = isNaN(items) ? 0 : items;
