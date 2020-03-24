@@ -27,11 +27,6 @@ const iState = {
         }
 
     ],
-
-
-
-
-
     products: [
 
         {
@@ -72,10 +67,6 @@ const iState = {
         }
 
     ],
-
-
-
-
     blogs: [
         {
             blogId: 1,
