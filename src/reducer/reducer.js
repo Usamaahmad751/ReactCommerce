@@ -1,5 +1,4 @@
 const iState = {
-    itemCount: 1,
     collections: [
         {
             imageLink: process.env.PUBLIC_URL + `/images/collection1.jpg`,
