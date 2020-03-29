@@ -1,11 +1,6 @@
 const iState = {
     collections: [
-        {
-            imageLink: process.env.PUBLIC_URL + `/images/collection1.jpg`,
-            name: "Shoes",
-            id: "1",
-            description: "This Collection is not available"
-        },
+       
         {
             imageLink: process.env.PUBLIC_URL + `/images/collection2.png`,
             name: "Clothes",
