@@ -12,15 +12,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .blog-description {
   margin: auto;
   text-align: justify;
